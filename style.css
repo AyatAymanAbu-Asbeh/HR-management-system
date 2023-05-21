@@ -1,0 +1,44 @@
+footer{
+ 
+ position:fixed;
+ offset-position:initial;
+ right:0px;
+ left:700px;;
+ //bottom:0;
+ top:600px;
+ justify-content: center;
+ font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+ font-size: smaller;
+}
+*{
+    background-color: rgb(219, 230, 245);
+}
+ table thead td
+ {  justify-content:center;
+    
+    width: 350px;
+    height: 50px;
+    background-color: rgb(144, 144, 239);
+    font-size: larger;
+    
+}
+table t body td tr{
+    background-color: antiquewhite;
+}
+h1{
+    justify-content:center;
+    text-align: center;
+   font-size: large;
+   //background-color:rgb(144, 144,239);
+   background-color: antiquewhite;
+
+}
+
+p{
+    justify-content:center;
+    text-align: center;
+   font-size: large;
+   //background-color:rgb(144, 144,239);
+
+}
+

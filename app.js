@@ -1,3 +1,4 @@
+
 'use strict';
 
 function New(id, name, department, level, image) {

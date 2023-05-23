@@ -1,124 +1,70 @@
-'use strict'
 
+'use strict';
 
-
-let Ghazi = {
-    Employee_ID: 1000,
-    Full_Name: "	Ghazi Samer",
-    Department: "Administration",
-    Level: "Senior",
-    Image:'https://www.example.com/images/img123.jpg',
-    
-    Salary: function() {
-            let a = Math.floor(Math.random() * 500) + 1500;
-            //console.log(a);
-            return a -7.5;
-        }
-        
-
+function New(id, name, department, level, image) {
+    this.Employee_ID = id;
+    this.Full_Name = name;
+    this.Department = department;
+    this.Level = level;
+    this.Image = image;
 }
-console.log(Ghazi);
+New.prototype.salarysenior = function () {
+    let a = Math.floor(Math.random() * 500) + 1500;
+
+    document.write(a);
+};
+New.prototype.salarymidsnior =function() {
+    let a = Math.floor(Math.random() * 500) + 1000;
+    document.write(a);
+};
+New.prototype.salaryJunior=function() {
+    let a = Math.floor(Math.random() * 500) + 500;
 
 
-let Lana={
-    Employee_ID:1001,
-    Full_Name:"	Lana Ali",
-    Department:"Finance",
-    Levle:"Senior",
-    Image:'https://www.example.com/images/img123.jpg',
-    Salary:
-    function() {
+    document.write(a);
+};
+/*New.prototype.clcsalary = function () {
+    if (this.Level == "Senior") {
         let a = Math.floor(Math.random() * 500) + 1500;
-
-        return a-7.5;
+        document.write(a);
     }
-    
-}
-console.log(Lana);
-
-
-let Tamara={
-    Employee_ID:1002,
-    Full_Name:"Tamara Ayoub",
-    Department:"Marketing",
-    Levle:"	Senior",
-    Image:'https://www.example.com/images/img123.jpg',
-    Salary:function() {
-        let a = Math.floor(Math.random() * 500) + 1500;
-
-        return a-7.5;
-    }
-    
-}
-console.log(Tamara);
-
-
-let safi={
-    Employee_ID:1003,
-    Full_Name:"	Safi Walid",
-    Department:"Administration",
-    Levle:"Mid-Senior",
-    Image:'https://www.example.com/images/img123.jpg',
-    Salary:function() {
+    elseif(this.Level == "Mid-Senior")
+    {
         let a = Math.floor(Math.random() * 500) + 1000;
-
-        return a-7.5;
+        document.write(a);
     }
-    
-}
-
-console.log(safi);
-
-let Omar={
-    Employee_ID:1004,
-    Full_Name:"Omar Zaid",
-    Department:"Development",
-    Levle:"Senior",
-    Image:'https://www.example.com/images/img123.jpg',
-    Salary:function() {
-        let a = Math.floor(Math.random() * 500) + 1500;
-
-        return a-7.5;
-    }
-    }
-    console.log(Omar);
-
-
-
-let Rana={
-    Employee_ID:1005,
-    Full_Name:"Rana Saleh",
-    Department:"Development",
-    Levle:"Junior",
-    Image:'https://www.example.com/images/img123.jpg',
-    Salary:function() {
+    elseif(this.Level == "Junior")
+    {
         let a = Math.floor(Math.random() * 500) + 500;
-
-        return a-7.5;
+        document.write(a);
     }
-}
+
+};*/
 
 
-console.log(Rana.Full_Name);
-console.log(Rana.Salary());
-let Hadi={
-    Employee_ID:1006,
-    Full_Name:"	Hadi Ahmad",
-    Department:"Finance",
-    Levle:"Mid-Senior",
-    Image:'https://www.example.com/images/img123.jpg',
-    Salary:function() {
-        let a = Math.floor(Math.random() * 500) + 1000;
 
-        return a-7.5;
-    }
-}
-console.table(Hadi);
 
-document.getElementById("demo").innerHTML = `Employee Name :${Ghazi.Full_Name}<br>Employee Salary :${Ghazi.Salary()}`
-document.getElementById("demo1").innerHTML = `Employee Name :${Lana.Full_Name}<br>Employee Salary :${Lana.Salary()}`
-document.getElementById("demo2").innerHTML = `Employee Name :${Tamara.Full_Name}<br>Employee Salary :${Tamara.Salary()}`
-document.getElementById("demo3").innerHTML = `Employee Name :${safi.Full_Name}<br>Employee Salary :${safi.Salary()}`
-document.getElementById("demo4").innerHTML = `Employee Name :${Omar.Full_Name}<br>Employee Salary :${Omar.Salary()}`
-document.getElementById("demo5").innerHTML = `Employee Name :${Rana.Full_Name}<br>Employee Salary :${Rana.Salary()}`
-document.getElementById("demo6").innerHTML = `Employee Name :${Hadi.Full_Name}<br>Employee Salary :${Hadi.Salary()}`
+let Ghazi = new New(1000, "Ghazi Samer", "Administration", "Senior", 'https://www.example.com/images/img123.jpg');
+console.log(Ghazi);
+let Lana = new New(1001, "	Lana Ali", "Finance", "Senior", 'https://www.example.com/images/img123.jpg');
+console.log(Lana);
+let Tamara = new New(1002, "Tamara Ayoub", "Marketing", "Senior", 'https://www.example.com/images/img123.jpg');
+console.log(Tamara);
+let saif = new New(1003, "	Safi Walid", "Administration", "Mid-Senior", 'https://www.example.com/images/img123.jpg');
+console.log(saif);
+let Omar = new New(1004, "Omar Zaid", "Development", "Senior", 'https://www.example.com/images/img123.jpg');
+console.log(Omar);
+let Rana = new New(1005, "Rana Saleh", "Development", "Junior", 'https://www.example.com/images/img123.jpg');
+console.log(Rana);
+let Hani = new New(1006, "	Hadi Ahmad", "Finance", "Mid-Senior", 'https://www.example.com/images/img123.jpg');
+console.log(Hani);
+
+
+
+document.write(`Employee name : ${Ghazi.Full_Name}<br> Department : ${Ghazi.Department} <br> Employee salary :`);Ghazi.salarymidsnior();
+document.write(`<br></br> Employee name : ${Lana.Full_Name}<br> Department : ${Lana.Department} <br> Employee salary :`);Lana.salarysenior();
+document.write(`<br></br>Employee name : ${Tamara.Full_Name}<br> Department : ${Tamara.Department} <br> Employee salary :`);Tamara.salarysenior();
+document.write(`<br></br>Employee name : ${saif.Full_Name}<br> Department : ${saif.Department} <br> Employee salary :`);saif.salarymidsnior();
+document.write(`<br></br>Employee name : ${Omar.Full_Name}<br> Department : ${Omar.Department} <br> Employee salary :`);Omar.salarysenior();
+document.write(`<br></br>Employee name : ${Rana.Full_Name}<br> Department : ${Rana.Department} <br> Employee salary :`);Rana.salaryJunior()
+document.write(`<br></br>Employee name : ${Hani.Full_Name}<br> Department : ${Hani.Department} <br> Employee salary :`);Hani.salarymidsnior(); 

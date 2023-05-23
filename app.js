@@ -1,4 +1,5 @@
 'use strict';
+
 function New(id, name, department, level, image) {
     this.Employee_ID = id;
     this.Full_Name = name;

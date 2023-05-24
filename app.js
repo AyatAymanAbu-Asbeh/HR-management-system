@@ -61,7 +61,7 @@ console.log(Hani);
 
 
 
-document.write(`Employee name : ${Ghazi.Full_Name}<br> Department : ${Ghazi.Department} <br> Employee salary :`);Ghazi.salarymidsnior();
+document.write(`Employee name : ${Ghazi.Full_Name}<br> Department : ${Ghazi.Department} <br> Employee salary :`); Ghazi.salarymidsnior();
 document.write(`<br></br> Employee name : ${Lana.Full_Name}<br> Department : ${Lana.Department} <br> Employee salary :`);Lana.salarysenior();
 document.write(`<br></br>Employee name : ${Tamara.Full_Name}<br> Department : ${Tamara.Department} <br> Employee salary :`);Tamara.salarysenior();
 document.write(`<br></br>Employee name : ${saif.Full_Name}<br> Department : ${saif.Department} <br> Employee salary :`);saif.salarymidsnior();

@@ -1,3 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Poopins:wght@300;400;500;600$display=swap');
+ 
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Poopins',sans-serif;
+    position:relative;
+    
+
+
+
+}
+.card-content{
+    position: relative;
+    margin: 30;
+
+
+}
+h1{background-color:#b4c3eb; }
+header{
+
+    background-color:#b4c3eb;
+}
+main{
+    min-height: 100vh;
+  display:flex;
+    align-items: center;
+   justify-content:first baseline;
+    background-color:#FFF;
+}
+.card{
+    /*width: 320px; */
+    border-radius: 25px;
+    background-color: #b4c3eb;
+}
+.image-content,.card-content{
+    display:flex;
+    flex-direction: column;
+  /*  align-items: center;*/
+   padding: 10px 14px;}
+.slide-container{
+    
+}
+.slide-content{
+    margin:  0 40px;
+}
+.card-image{
+    position: relative;
+    height: 150px;
+    width: 150px;
+    border-radius: 50px;
+    background-color: #173892;
+    padding: 3px;
+
+}
+.card-image .card-img{
+    height: 100px; 
+    width: 100px;
+    object-fit: cover;
+    border-radius: 50px;
+    border: 4px solid #407;
+
+
+}
+.image-content{
+   position: relative;
+    row-gap: 5px;
+    padding:25px 25 ;
+}
+
+.overlay{
+    position: absolute;
+    height: 160px;
+    width: 238px;
+    top: 0;
+    left: 0;
+    background-color:#173892;
+    border-radius: 25px 25px 0 25px ;
+}
+.overlay::before,.overlay::after{
+    position:absolute;
+    content:'';
+    right: 0;
+    bottom: -40px;
+    width: 40px;
+    height: 40px;
+    background-color:#173892;
+
+}
+.overlay::after{
+    border-radius: 0 25px 0 0;
+    background-color: #b4c3eb;
+}
 footer{
  
     position:fixed;
@@ -9,7 +104,65 @@ footer{
     justify-content: center;
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: smaller;
+    background-color: #fefefe;
    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
    *{
        background-color: rgb(219, 230, 245);
    }
